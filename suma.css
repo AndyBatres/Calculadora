@@ -1,0 +1,47 @@
+#titulo {
+    text-align: center;
+}
+
+hr {
+    border: black 1px solid;
+}
+
+.Calculadora {
+    border: black 3px solid;
+    border-radius: 10px;
+    margin: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.Respuestas {
+    padding: 20px;  
+    margin: 70px;
+    border: black 3px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 12px;
+}
+
+.Numeros {
+    border: black 3px solid;
+    border-radius: 10px;
+    margin: 70px;   
+}
+input{
+    text-align: center;
+    height: 60px;
+}
+.numeros{
+    display: flex;
+    flex-wrap: wrap;
+}
+.numeros button {
+    width: 30.90%;
+    height: 60px;
+    font-size: 30px;
+    margin: 8px;
+}
