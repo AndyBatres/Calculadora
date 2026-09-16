@@ -5,48 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suma</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="suma.css">
-    <script src="suma.js"></script>
 </head>
 
 <body>
-    <div id="titulo">
-        <h1>Sumas</h1>
-        <hr>
-    </div>
-    <div class="fondo">
-        <div class="Calculadora">
-            <div class="Respuestas">
-                <div>
-                    <input type="number" name="num1" id="num1" placeholder="Ingrese un numero">
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MANN.CO OF CALCULATOR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="suma.html">Calculadora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="titulo-principal">CALCULADORA DE SUMA</h1>
+
+    <div class="Div_Principal">
+        <div class="Div_Contenido">
+            <div class="Calculadora">
+                <div class="Respuestas">
+                    <div class="input-group">
+                        <input type="number" name="num1" id="num1" placeholder="Ingrese un número" aria-label="Número 1">
+                    </div>
+
+                    <h2>+</h2>
+
+                    <div class="input-group">
+                        <input type="number" name="num2" id="num2" placeholder="Ingrese otro número" aria-label="Número 2">
+                    </div>
+
+                    <h2>=</h2>
+
+                    <div class="resultado-box">
+                        <h2 id="resultado">Resultado</h2>
+                    </div>
                 </div>
 
-                <h2>+</h2>
-                <div>
-                    <input type="number" name="num2" id="num2" placeholder="Ingrese otro numero">
-                </div>
-                <h2>=</h2>
-                <div>
-                    <h2 id="resultado">Resultado</h2>
-                </div>
-            </div>
-            <div class="Numeros">
-                <div class="numeros">
-                    <button id="1" onclick="agregarNumero1()">1</button>
-                    <button id="2" onclick="agregarNumero2()">2</button>
-                    <button id="3" onclick="agregarNumero3()">3</button>
-                    <button id="4" onclick="agregarNumero4()">4</button>
-                    <button id="5" onclick="agregarNumero5()">5</button>
-                    <button id="6" onclick="agregarNumero6()">6</button>
-                    <button id="7" onclick="agregarNumero7()">7</button>
-                    <button id="8" onclick="agregarNumero8()">8</button>
-                    <button id="9" onclick="agregarNumero9()">9</button>
-                    <button id="borrar" onclick="borrar()">C</button>
-                    <button id="0" onclick="agregarNumero0()">0</button>
-                    <button id="igual" onclick="calcularResultado()">=</button>
+                <div class="Numeros">
+                    <div class="numeros">
+                        <button id="1" onclick="agregarNumero1()">1</button>
+                        <button id="2" onclick="agregarNumero2()">2</button>
+                        <button id="3" onclick="agregarNumero3()">3</button>
+                        <button id="4" onclick="agregarNumero4()">4</button>
+                        <button id="5" onclick="agregarNumero5()">5</button>
+                        <button id="6" onclick="agregarNumero6()">6</button>
+                        <button id="7" onclick="agregarNumero7()">7</button>
+                        <button id="8" onclick="agregarNumero8()">8</button>
+                        <button id="9" onclick="agregarNumero9()">9</button>
+                        <button id="borrar" onclick="borrar()">C</button>
+                        <button id="0" onclick="agregarNumero0()">0</button>
+                        <button id="igual" onclick="calcularResultado()">=</button>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="suma.js"></script>
 </body>
 
 </html>
