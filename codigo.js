@@ -24,7 +24,7 @@ function Calcular() {
     }
     else if (valor == Infinity) {
         num1.value = "Error";
-        resultado.textContent = "Error";
+        resultado.textContent = "No se puede dividir entre cero";
         valor.textContent = "Error";
     } else {
         resultado.textContent = valor;
