@@ -17,6 +17,7 @@ function borrar() {
 function Calcular() {
     
     let valor = eval(num1.value);
+    
     if(valor == undefined) {
         num1.value = "0";
         resultado.textContent = "0";
