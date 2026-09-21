@@ -15,12 +15,17 @@ function borrar() {
 }
 
 function Calcular() {
-    
+
     let valor = eval(num1.value);
-    if(valor == undefined) {
+    if (valor == undefined) {
         num1.value = "0";
         resultado.textContent = "0";
         valor.textContent = "0"
+    }
+    else if (valor == Infinity) {
+        num1.value = "Error";
+        resultado.textContent = "Error";
+        valor.textContent = "Error";
     } else {
         resultado.textContent = valor;
     }
