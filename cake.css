@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body.pain-body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #dedede;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a0808;
+}
+
+.scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem 0 2rem;
+}
+
+.painis-image {
+    display: block;
+    width: min(78vw, 760px);
+    height: auto;
+    background: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+}
+
+.scene h1 {
+    margin: 1.2rem 0 0.5rem;
+    font-size: clamp(2rem, 4vw, 4rem);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #1a0909;
+}
+
+.scene p {
+    margin: 0 0 1.1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(26, 9, 9, 0.8);
+}
+
+.quote {
+    margin: 0.2rem 0 0.8rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: none;
+    color: rgba(26, 9, 9, 0.9);
+}
+
+.back-home {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    color: #f5eded;
+    background: linear-gradient(180deg, #2e0d10 0%, #12090c 100%);
+    border: 2px solid rgba(28, 8, 10, 0.8);
+    border-radius: 999px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-home:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 16px 24px rgba(0,0,0,0.12);
+}
+

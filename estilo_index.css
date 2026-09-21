@@ -89,6 +89,20 @@ body {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
 
+.hidden-word {
+    display: inline;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.hidden-word:hover {
+    opacity: 1;
+    color: #f7d56b;
+}
+
 @media (max-width: 768px) {
     .Div_Contenido {
         padding: 1rem;
@@ -98,5 +112,12 @@ body {
     .Div_Respuesta2,
     .Div_Respuesta3 {
         font-size: 0.98rem;
+    }
+
+    .hidden-link {
+        right: 12px;
+        bottom: 12px;
+        font-size: 0.64rem;
+        letter-spacing: 0.08em;
     }
 }
