@@ -154,6 +154,30 @@ input::placeholder {
     color: #1d1200;
 }
 
+.información hr{
+    border: solid black 2px;
+}
+
+.información a{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.ejemplo{
+    display: flex;
+    gap: 50px;
+}
+.ti{
+    width: 50%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    font-size: 30px;
+}
+.im{
+    width: 50%;
+}
+.info{
+    padding: 40px;
+    margin: 40px;
+}
 @media (max-width: 768px) {
     .Respuestas {
         flex-direction: column;
