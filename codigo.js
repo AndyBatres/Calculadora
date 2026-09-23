@@ -29,6 +29,6 @@ function Calcular() {
     } else {
         resultado.textContent = valor;
     }
-    num1.value = valor;
+    
 
 }
